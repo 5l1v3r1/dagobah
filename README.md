@@ -1,4 +1,7 @@
-# dagobah the opensource inventory & compliance check for AWS
+# dagobah the lambda opensource to collect inventory & compliance data from AWS
+
+![alt text](images/deployment.png "Dagobah Inventory")
+
 
 This python code collect:
 
