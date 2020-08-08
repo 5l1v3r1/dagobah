@@ -1,6 +1,6 @@
 # DAGOBAH the open source tool to generate internal threat intelligence, inventory & compliance data from AWS Resources.
 
-![alt text](https://github.com/Stuxend/dagobah/images/deployment.png "Dagobah Inventory")
+![alt text](https://github.com/Stuxend/dagobah/blob/master/images/deployment.png "Dagobah Inventory")
 
 Dagobah is an open source tool written in python to automate the internal threat intelligence generation, inventory collection and compliance check from different AWS resources. Dagobah collects information and save the state into an elasticsearch index.
 
