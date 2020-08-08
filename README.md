@@ -1,6 +1,6 @@
 # DAGOBAH - open source tool to generate internal threat intelligence, inventory & compliance data from AWS resources.
 
-![alt text](https://github.com/Stuxend/dagobah/blob/master/images/deployment.png "Dagobah Inventory")
+![alt text](https://github.com/Stuxend/dagobah/blob/master/images/dagobah-dashboard.png "Dagobah Inventory")
 
 Dagobah is an open source tool written in python to automate the internal threat intelligence generation, inventory collection and compliance check from different AWS resources. Dagobah collects information and save the state into an elasticsearch index.
 
@@ -38,11 +38,17 @@ Dagobah runs into the a LAMBDA and looks at all the AWS REGIONS, actually collec
 ```
 
 # How works:
+
+
+![alt text](https://github.com/Stuxend/dagobah/blob/master/images/deployment.png "Dagobah Inventory")
+
 Ideally a Cloudwatch event is triggered the lambda every XXX with the account, role, and inventory type (all) to collect. The lambda gets the cloudwatch and iterates the accounts/role/inventory to start querying the AWS EC2 API with boto3 (not extra charges for use) and for different resources, an additional analyzer is triggered to get context information like: 
   - wazuh information (comming soon)
   - running time EC2
   - security group rule status (open/closed)
 Each result is stored in the inventory index of elasticsearch. 
+
+
 
 # Future integrations:
 - lambda functions
