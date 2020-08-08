@@ -1,4 +1,4 @@
-# DAGOBAH the open source tool to generate internal threat intelligence, inventory & compliance data from AWS Resources.
+# DAGOBAH - open source tool to generate internal threat intelligence, inventory & compliance data from AWS resources.
 
 ![alt text](https://github.com/Stuxend/dagobah/blob/master/images/deployment.png "Dagobah Inventory")
 
