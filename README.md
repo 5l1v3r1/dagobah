@@ -24,7 +24,7 @@ Dagobah runs into the a LAMBDA and looks at all the AWS REGIONS, actually collec
 
 
 # Non-AWS resources:
-- WAZUH
+- WAZUH (comming soon)
 
 # Code layout:
 ```sh
@@ -39,7 +39,17 @@ Dagobah runs into the a LAMBDA and looks at all the AWS REGIONS, actually collec
 
 # How works:
 Ideally a Cloudwatch event is triggered the lambda every XXX with the account, role, and inventory type (all) to collect. The lambda gets the cloudwatch and iterates the accounts/role/inventory to start querying the AWS EC2 API with boto3 (not extra charges for use) and for different resources, an additional analyzer is triggered to get context information like: 
-  - wazuh information
-  - time to live
+  - wazuh information (comming soon)
+  - running time EC2
   - security group rule status (open/closed)
 Each result is stored in the inventory index of elasticsearch. 
+
+# Future integrations:
+- lambda functions
+- aws elb/nlb
+- dns route53
+- iam / trustadvisor
+- s3 buckets
+- eks/fargate
+- transit-gateways
+- api gateway
